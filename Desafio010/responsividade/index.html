@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 280px; /*Largura-minima 320 é a largura de uma tele bem antigo*/
+            max-width: 800px;/*Largura-maxima*/
+            margin: auto; /*Fica centralizado*/
+        }
+        img{
+            width: 100%; /* largura da imagem para responsividade mas podesmos usar uma imagem mais pequena na tag picture e usar um sourece media  */
+        }
+    </style>
+</head>
+<body>
+     <main>
+        <h1>Testando Resposividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, harum! Praesentium eveniet dolore aperiam pariatur architecto illum molestiae, illo adipisci, aut modi eius! Earum vitae nisi non nam. Ut, adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corporis temporibus consectetur cupiditate provident modi minus, delectus quibusdam consequatur quas velit. Soluta ad inventore assumenda, asperiores veniam amet sint! Nam!</p>
+        <picture>
+            <source media="(max-width:600px )" srcset="../imagens/irina-blok-pq.jpg">
+            <img src="../imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam eveniet aut repudiandae temporibus, exercitationem iusto est necessitatibus fuga esse, error expedita ex fugiat ducimus alias magni saepe veritatis eaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis iste sapiente provident blanditiis, laborum quis harum iure quae numquam dolorum vitae neque impedit itaque fugiat, dolor dicta sequi suscipit optio.</p>
+     </main>
+</body>
+</html>
